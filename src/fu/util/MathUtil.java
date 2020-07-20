@@ -23,7 +23,7 @@ public class MathUtil {
             result *= i;
         }
         return result;
-        
+            
        //dsndi
     }
 }

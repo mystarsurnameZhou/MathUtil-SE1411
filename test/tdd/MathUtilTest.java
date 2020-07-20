@@ -50,7 +50,7 @@ public class MathUtilTest {
         //1 Exception
         //khốn nạn, Exception ko phải là value để assert()
         //ta phải dùng 1 chiêu khác
-        MathUtil.computeFactorial(-5);   //ko xài assertEquals()
+        //MathUtil.computeFactorial(-5);   //ko xài assertEquals()
         //đưa -5 vào tham số, mình (dev tk ra hàm cF() coi đây là cà chớn)
         //đập vào mặt ng đưa ra con số -5 này vào
         //bằng cách ném ra ngoại lệ IllegalArgumentException

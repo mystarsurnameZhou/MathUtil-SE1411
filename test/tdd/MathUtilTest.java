@@ -56,6 +56,7 @@ public class MathUtilTest {
 //        bằng cách ném ra ngoại lệ IllegalArgumentException
 //        hi
     }
+    //one
 }
 
 //đỏ: chỉ cần 1 thằng đỏ, là coi như cả đám đỏ, hàm chạy đúng hầu hết 

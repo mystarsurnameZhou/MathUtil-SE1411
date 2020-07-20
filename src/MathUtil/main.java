@@ -41,7 +41,7 @@ public class main {
         //tự đưa ra kết luận -> luận hàm bằng mắt
         
         //expected : Exception à nhen
-        System.out.println("-5! = " + computeFactorial(-5));
+        //System.out.println("-5! = " + computeFactorial(-5));
         
         //kĩ thuật này dùng mắt đối chiếu kq ổn, nhưng ko hiệu quả
         //vì máy có thể đối chiếu dq dc lun mà, máy so dc expected và actual mà

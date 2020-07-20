@@ -41,21 +41,22 @@ public class MathUtilTest {
         
         assertEquals(720, MathUtil.computeFactorial(6));
     }      
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testFailedCases(){
+//        hàm này test những tình huống cà chớn
+//        ng dùng đưa 5!, tính thế éo nào đc
+//        hàm cF() phải ném về ngoại lệ, một tình huống bất thường, 
+//        1 Exception
+//        khốn nạn, Exception ko phải là value để assert()
+//        ta phải dùng 1 chiêu khác
+        MathUtil.computeFactorial(-5);   //ko xài assertEquals()
+//        đưa -5 vào tham số, mình (dev tk ra hàm cF() coi đây là cà chớn)
+//        đập vào mặt ng đưa ra con số -5 này vào
+//        bằng cách ném ra ngoại lệ IllegalArgumentException
+//        hi
+    }
 }
-    //@Test(expected = IllegalArgumentException.class)
-    //public void testFailedCases(){
-        //hàm này test những tình huống cà chớn
-        //ng dùng đưa 5!, tính thế éo nào đc
-        //hàm cF() phải ném về ngoại lệ, một tình huống bất thường, 
-        //1 Exception
-        //khốn nạn, Exception ko phải là value để assert()
-        //ta phải dùng 1 chiêu khác
-        //MathUtil.computeFactorial(-5);   //ko xài assertEquals()
-        //đưa -5 vào tham số, mình (dev tk ra hàm cF() coi đây là cà chớn)
-        //đập vào mặt ng đưa ra con số -5 này vào
-        //bằng cách ném ra ngoại lệ IllegalArgumentException
-        //hi
-    //}
 
 //đỏ: chỉ cần 1 thằng đỏ, là coi như cả đám đỏ, hàm chạy đúng hầu hết 
 //các cases, nhưng chỉ 1 tình huống sai, coi như hàm sai

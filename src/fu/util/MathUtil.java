@@ -18,6 +18,8 @@ public class MathUtil {
     // 15! to lắm rồi, tính tối đa 15!
     public static long computeFactorial (int n)
     {
+        if(n<0 || n>15)
+            throw new IllegalArgumentException("Invalid argument.");
         long result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
